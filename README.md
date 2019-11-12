@@ -1,27 +1,52 @@
-# CustomerList
+# Customer List
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.17.
 
-## Development server
+This is a basic app that demonstrates the features of Angular 8.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Demonstrated Features
 
-## Code scaffolding
+* ### Interpolation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Interpolation refers to embedding expressions into marked up text.
 
-## Build
+Interpolation allows you to incorporate calculated strings into the text between HTML element tags and within attribute assignments.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Template expressions are what you use to calculate those strings.
 
-## Running unit tests
+By default, interpolation uses as its delimiter the double curly braces, {{ and }}.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* ### Style Binding
 
-## Running end-to-end tests
+Style binding is used to set a style of a view element. We can set inline styles with style binding.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+We can conditionally set a style value depending on a property of the component.
 
-## Further help
+* ### Event Binding
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Event Binding is one-way data binding, that sends information from the view to the component class. 
+
+When a user interacts with your app, sometimes it is necessary to know when this happens.
+
+A click, hover, or a keyboard action are all events that you can use to call component logic within Angular.
+
+
+* ### Two-way Binding
+
+Two-way binding means that any data-related changes affecting the model are immediately propagated to the matching view(s), and that any changes made in the view(s) (say, by the user) are immediately reflected in the underlying model.
+
+When app data changes, so does the UI, and conversely.
+
+* ### Built-in pipe
+
+A pipe takes in data as input and transforms it to a desired output.
+
+Angular comes with a stock of pipes that are all available for use in any template.
+
+* ### Custom pipe
+
+Pipes in Angular 2+ are a great way to transform and format data right from your templates.
+
+Out of the box you get pipes for dates, currency, percentage and character cases, but you can also easily define custom pipes of your own.
+
+Here for example we create a pipe that takes a string and returns it with all the words having their first character capitalized.
